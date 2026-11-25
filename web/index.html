@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#155d4e">
+  <meta name="description" content="Encuentra escapadas en México que encajan con tus planes.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <title>Modo Escapada</title>
+  <style>
+    html,body{margin:0;background:#f8f7f1;color:#16362f}
+    #splash{position:fixed;inset:0;display:grid;place-content:center;text-align:center;font:17px Georgia,serif}
+    #splash img{width:72px;margin:0 auto 14px}
+    #splash p{margin:0}
+  </style>
+</head>
+<body>
+  <div id="splash" aria-live="polite"><img src="icons/Icon-192.png" alt=""><p>Preparando tu escapada…</p></div>
+  <script>
+    window.addEventListener('flutter-first-frame', () => document.getElementById('splash')?.remove(), {once:true});
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

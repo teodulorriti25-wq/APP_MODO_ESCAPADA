@@ -1,0 +1,35 @@
+name: modo_escapada
+description: Aplicacion Flutter de Modo Escapada.
+publish_to: none
+version: 1.4.0+5
+environment:
+  sdk: '>=3.9.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.1.5
+  http: ^1.5.0
+  intl: ^0.20.2
+  flutter_secure_storage: ^10.0.0
+  web_socket_channel: ^3.0.3
+  audioplayers: ^6.8.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/imagenes/
+    - assets/sonidos/reserva.mp3
+  fonts:
+    - family: Noto
+      fonts:
+        - asset: assets/fuentes/NotoSans-Regular.ttf
+        - asset: assets/fuentes/NotoSans-Bold.ttf
+          weight: 700
+    - family: Editorial
+      fonts:
+        - asset: assets/fuentes/NotoSerif-Regular.ttf
